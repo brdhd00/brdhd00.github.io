@@ -1,8 +1,8 @@
 ---
-title: Terrace
+title: Cows
 date: 2024-11-20
-medium: Acrylic on panel, 16 × 20 in
+medium: edition of 100, Lunchtime Press, Glasgow
 featured: false
-image: /images/artwork/terrace.svg
-description: Looking down from a balcony — compressed space and strong shadows.
+image: /images/artwork/cows_1.jpg
+description: 
 ---
