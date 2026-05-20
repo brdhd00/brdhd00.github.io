@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+:root {
+  --content-inset: 33.333vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  letter-spacing: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.content {
+  max-width: 900px;
+}
+
+.homepage {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+nav {
+  padding: 15px;
+  background: white;
+  line-height: 1.2;
+  position: static;
+  z-index: 9;
+  width: 100%;
+}
+
+.site-footer {
+  position: fixed;
+  bottom: 15px;
+  left: var(--content-inset);
+  width: calc(100vw - var(--content-inset));
+  z-index: 9;
+  font-size: 10px;
+}
+
+.site-footer ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 100%;
+}
+
+.site-footer li {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.site-footer li:first-child {
+  text-align: left;
+}
+
+.site-footer li:last-child {
+  text-align: right;
+}
+
+.main-nav {
+  text-align: right;
+}
+
+.main-nav li {
+  text-align: left;
+}
+
+.project,
+.homepage {
+  padding-left: var(--content-inset);
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a.active {
+  color: #0019ff;
+}
+
+.project a {
+  color: #0019ff;
+}
+
+nav h1 {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+nav h1 a {
+  cursor: pointer;
+}
+
+.project-vertical img {
+  margin-bottom: 15px;
+}
+
+.project-vertical p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.project h1 {
+  letter-spacing: normal;
+}
+
+.nav-spacer {
+  margin-bottom: 30px;
+}
+
+.main-page-only {
+  display: block;
+}
+
+.works-page-only {
+  display: none;
+}
+
+body.works-index .works-page-only,
+body.artwork-page .works-page-only {
+  display: block;
+}
+
+body.info-page .works-page-only {
+  display: none;
+}
+
+nav a:hover {
+  color: #0019ff;
+  text-decoration: none;
+}
+
+.prose-site p {
+  margin-top: 0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.prose-site a {
+  color: #0019ff;
+}
+
+.prose-site img {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .homepage {
+    display: block;
+  }
+
+  .homepage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project h1 {
+    display: none;
+  }
+
+  nav h1 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: right;
+  }
+
+  :root {
+    --content-inset: max(33.333vw, 242px);
+  }
+
+  .project,
+  .homepage {
+    padding-top: 81px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .homepage {
+    padding-top: 83px;
+  }
+
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 242px;
+    padding: 30px;
+    padding-top: 81px;
+  }
+
+  .main-nav {
+    text-align: right;
+  }
+
+  .main-nav li {
+    text-align: left;
+  }
+}

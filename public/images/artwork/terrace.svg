@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Placeholder artwork">
+  <rect width="400" height="500" fill="#2a4a5c"/>
+  <rect x="0" y="280" width="400" height="220" fill="#1a1814"/>
+  <rect x="40" y="200" width="80" height="120" fill="#c9a87c" opacity="0.8"/>
+</svg>
